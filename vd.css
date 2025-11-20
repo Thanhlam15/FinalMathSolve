@@ -1,0 +1,176 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0e0e0e;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #181818;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ff8800;
+  font-weight: 700;
+  font-size: 20px;
+  transition: transform 0.3s, text-shadow 0.3s;
+}
+
+/* Logo image */
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;          /* Bo tròn */
+  object-fit: cover;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px #ff8800; /* Glow nhẹ mặc định */
+}
+/* Hover hiệu ứng neon + scale */
+.logo:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px red, 0 0 30px rgb(247, 132, 132), 0 0 40px #ff8800;
+}
+
+
+.search-box {
+    width: 500px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.search-box button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.search-box button:hover {
+    background: #333333;
+}
+
+
+.nav-buttons a {
+  color: white;
+  margin-left: 15px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #ff8800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+  background: #ffa733;
+}
+
+/* GRID 4 CARD + responsive */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD CLICK ĐƯỢC */
+.movie-card {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.movie-card h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* HOVER PHÓNG TO + BÓNG NEON CAM */
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 136, 0, 0.5);
+}
+/* Nút FREE */
+@keyframes neonBlink {
+  0%, 100% {
+    text-shadow: 0 0 10px #00faff, 0 0 20px #00faff;
+    opacity: 1;
+  }
+  50% {
+    text-shadow: 0 0 2px #00faff;
+    opacity: 0.5;
+  }
+}
+
+.free-btn {
+  padding: 10px 22px;
+  background: transparent;
+  color: #00faff;
+  border: 2px solid #00faff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  animation: neonBlink 1s infinite ease-in-out;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Giải Đề Ôn Luyện Toán</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #d35400 !important;
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+       
+        nav {
+            background-color: #FE7743;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #E6A45F;
+        }
+        nav a:hover {
+            background-color: #d35400;
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .section:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* tạo bóng */
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .problem {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #e74c3c;
+            font-size: 1.1em;
+        }
+        .solution {
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+            padding: 15px;
+            border-left: 5px solid #27ae60;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .solution p {
+            margin: 0;
+            text-align: left;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Phần Giải Đề Ôn Luyện Toán</h1>
+    <nav>
+        <a href="#lop10"> Lớp 10</a>
+        <a href="#lop11"> Lớp 11</a>
+        <a href="#lop12">Lớp 12</a>
+        <a href="#daihoc">Đại Học</a>
+        <a href="#">Tải Đề</a>
+    </nav>
+
+    <div class="section" id="lop10">
+        <h2>Giải Đề Lớp 10</h2>
+        <img src="https://giasuthukhoathanhhoa.com/wp-content/uploads/2021/12/bo-de-on-thi-vao-lop-10-mon-toan-thanh-hoa-mau-den-trang-3897x5398-1-578x800.jpg" alt="Đề Thi Vào Lớp 10 Môn Toán Thanh Hóa">
+        <div class="problem">Bài 1 : Giải phương trình bậc hai: x² - 5x + 6 = 0</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Phân tích thành nhân tử: (x - 2)(x - 3) = 0</p>
+            <p>Nghiệm: x = 2 hoặc x = 3</p>
+        </div>
+        <div class="problem">Bài 2 : Giải bất phương trình: x² - 4x - 5 ≤ 0</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Giải phương trình x² - 4x - 5 = 0: (x - 5)(x + 1) = 0 ⇒ x = 5 hoặc x = -1</p>
+            <p>Biểu thức âm giữa nghiệm: -1 ≤ x ≤ 5</p>
+        </div>
+        <div class="problem">Bài 3 : Giải hệ phương trình: 2x + y = 5, x - y = 1</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Cộng hai phương trình: 3x = 6 ⇒ x = 2</p>
+            <p>Thay vào phương trình thứ hai: 2 - y = 1 ⇒ y = 1</p>
+            <p>Nghiệm: x = 2, y = 1</p>
+        </div>
+        <div class="problem">Bài 4 : Giải phương trình: √(x + 1) = 3</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Bình phương hai vế: x + 1 = 9 ⇒ x = 8</p>
+            <p>Kiểm tra: √(8 + 1) = √9 = 3, đúng.</p>
+            <p>Nghiệm: x = 8</p>
+        </div>
+        <div class="problem">Bài 5 : Giải bất phương trình: (x - 1)(x + 2) > 0</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Nghiệm của (x - 1)(x + 2) = 0: x = 1 hoặc x = -2</p>
+            <p>Biểu thức dương ngoài nghiệm: x < -2 hoặc x > 1</p>
+        </div>
+        <div class="problem">Bài 6 : Tìm tập xác định của hàm số: f(x) = √(x - 2)</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Điều kiện: x - 2 ≥ 0 ⇒ x ≥ 2</p>
+            <p>Tập xác định: [2, +∞)</p>
+        </div>
+        <div class="problem">Bài 7 : Giải phương trình: 2x² - 3x - 2 = 0</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Sử dụng công thức: x = [3 ± √(9 + 16)] / 4 = [3 ± √25]/4 = [3 ± 5]/4</p>
+            <p>Nghiệm: x = 2 hoặc x = -0.5</p>
+        </div>
+        <div class="problem">Bài 8 : Giải hệ: x + y = 4, x - y = 2</div>
+        <div class="solution">
+            <p>Lời giải:</p>
+            <p>Cộng: 2x = 6 ⇒ x = 3</p>
+            <p>Trừ: 2y = 2 ⇒ y = 1</p>
+            <p>Nghiệm: x = 3, y = 1</p>
+        </div>
+    </div>
+
+    <div class="section" id="lop11">
+        <h2>Đại Số Lớp 11</h2>
+        <img src="images/đề11/đề 11.jpg" alt="Đề Thi Đại Số Lớp 11" style="width: 50%; max-width: 400px; height: auto;">
+        <div class="problem">Bài 1: Giải hệ phương trình: x + y = 5, 2x - y = 1</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Xem xét hệ phương trình:</p>
+            <p>(1) x + y = 5</p>
+            <p>(2) 2x - y = 1</p>
+            <p>Bước 2: Cộng hai phương trình (1) và (2) để loại bỏ y:</p>
+            <p>(1) + (2): (x + y) + (2x - y) = 5 + 1 ⇒ 3x = 6 ⇒ x = 2</p>
+            <p>Bước 3: Thay x = 2 vào phương trình (1):</p>
+            <p>2 + y = 5 ⇒ y = 5 - 2 = 3</p>
+            <p>Bước 4: Kiểm tra nghiệm với phương trình (2):</p>
+            <p>2*2 - 3 = 4 - 3 = 1, đúng.</p>
+            <p>Nghiệm: x = 2, y = 3</p>
+        </div>
+        <div class="problem">Bài 2 : Giải phương trình lượng giác: sin(x) = 0.5 trong khoảng [0, 2π]</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: sin(x) = 0.5</p>
+            <p>Bước 2: Nghiệm chính: x = π/6</p>
+            <p>Bước 3: Nghiệm trong [0, 2π]: x = π/6 hoặc x = π - π/6 = 5π/6</p>
+            <p>Nghiệm: x = π/6, 5π/6</p>
+        </div>
+        <div class="problem">Bài 3 : Tìm giới hạn: lim (x→0) (sin(x)/x)</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Đây là giới hạn cơ bản.</p>
+            <p>Bước 2: lim (x→0) (sin(x)/x) = 1</p>
+            <p>Kết quả: 1</p>
+        </div>
+        <div class="problem">Bài 4 : Giải phương trình logarit: log₂(x) = 3</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Phương trình: log₂(x) = 3</p>
+            <p>Bước 2: Viết dưới dạng mũ: x = 2³</p>
+            <p>Bước 3: Tính: x = 8</p>
+            <p>Bước 4: Kiểm tra: log₂(8) = 3, đúng vì 2³ = 8.</p>
+            <p>Nghiệm: x = 8</p>
+        </div>
+        <div class="problem">Bài 5 : Tìm đạo hàm của hàm số: f(x) = x² + 3x - 1</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Hàm số: f(x) = x² + 3x - 1</p>
+            <p>Bước 2: Đạo hàm: f'(x) = 2x + 3</p>
+            <p>Bước 3: Đạo hàm của x² là 2x, đạo hàm của 3x là 3, đạo hàm của hằng số -1 là 0.</p>
+            <p>Kết quả: f'(x) = 2x + 3</p>
+        </div>
+    </div>
+
+    <div class="section" id="lop12">
+        <h2>Đại Số Lớp 12</h2>
+        <img src="images/đề12/đề 12b.JPG" alt="Đề Thi Đại Số Lớp 12" style="width: 50%; max-width: 400px; height: auto;">
+        <div class="problem">Bài 1: Tìm ma trận nghịch đảo của A = [1 2; 3 4]</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Ma trận A = [1 2; 3 4]</p>
+            <p>Bước 2: Tính định thức det(A) = 1*4 - 2*3 = 4 - 6 = -2 ≠ 0, nên có nghịch đảo.</p>
+            <p>Bước 3: Ma trận phụ hợp của A là [4 -2; -3 1]</p>
+            <p>Bước 4: Ma trận nghịch đảo A⁻¹ = (1/det(A)) * ma trận phụ hợp = (1/-2) * [4 -2; -3 1] = [-2 1; 1.5 -0.5]</p>
+            <p>Kết quả: A⁻¹ = [-2 1; 1.5 -0.5]</p>
+        </div>
+        <div class="problem">Bài 2 : Tính tích phân ∫(x² + 3x - 1) dx</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Tích phân ∫(x² + 3x - 1) dx</p>
+            <p>Bước 2: Tích phân từng phần: ∫x² dx = (1/3)x³, ∫3x dx = (3/2)x², ∫-1 dx = -x</p>
+            <p>Bước 3: Kết hợp: (1/3)x³ + (3/2)x² - x + C</p>
+            <p>Kết quả: (1/3)x³ + (3/2)x² - x + C</p>
+        </div>
+        <div class="problem">Bài 3 : Giải phương trình vi phân: dy/dx = 2x</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Phương trình: dy/dx = 2x</p>
+            <p>Bước 2: Tách biến: dy = 2x dx</p>
+            <p>Bước 3: Tích phân hai vế: ∫dy = ∫2x dx ⇒ y = x² + C</p>
+            <p>Kết quả: y = x² + C</p>
+        </div>
+        <div class="problem">Bài 4 : Tìm giá trị lớn nhất của hàm số f(x) = -x² + 4x - 3 trên R</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Hàm số f(x) = -x² + 4x - 3</p>
+            <p>Bước 2: Đạo hàm f'(x) = -2x + 4</p>
+            <p>Bước 3: Đặt f'(x) = 0: -2x + 4 = 0 ⇒ x = 2</p>
+            <p>Bước 4: f''(x) = -2 < 0, nên cực đại tại x=2</p>
+            <p>Bước 5: Giá trị cực đại: f(2) = -4 + 8 - 3 = 1</p>
+            <p>Kết quả: Giá trị lớn nhất là 1</p>
+        </div>
+        <div class="problem">Bài 5: Tính xác suất của biến ngẫu nhiên X ~ Binomial(n=5, p=0.5) với P(X=3)</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: X ~ B(5, 0.5)</p>
+            <p>Bước 2: Công thức: P(X=k) = C(n,k) * p^k * (1-p)^{n-k}</p>
+            <p>Bước 3: P(X=3) = C(5,3) * (0.5)^3 * (0.5)^{2} = 10 * 0.125 * 0.25 = 10 * 0.03125 = 0.3125</p>
+            <p>Kết quả: 0.3125</p>
+        </div>
+    </div>
+
+ <div class="section" id="daihoc">
+        <h2>Xác Suất Đại Học</h2>
+        <img src="images/đề đại học/dtdh3.jpg" alt="Sơ đồ cây cho tung đồng xu 2 lần" style="width: 50%; max-width: 400px; height: auto; display: block; margin: 0 auto 20px;">
+        <div class="problem">Bài 1: Tính xác suất tung đồng xu 2 lần được 2 mặt sấp</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Xác định không gian mẫu. Khi tung đồng xu 2 lần, mỗi lần có 2 kết quả: Ngửa (H) hoặc Sấp (T). Vậy tổng số kết quả: 2 × 2 = 4.</p>
+            <p>Bước 2: Liệt kê các kết quả: HH, HT, TH, TT.</p>
+            <p>Bước 3: Sự kiện thuận lợi: Được 2 mặt sấp, tức là TT. Chỉ có 1 kết quả.</p>
+            <p>Bước 4: Xác suất: P = số kết quả thuận lợi / tổng số kết quả = 1/4.</p>
+            <p>Kết quả: 1/4</p>
+        </div>
+        <div class="problem">Bài 2 : Tính xác suất P(Z < 1.96) với Z ~ N(0,1)</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Z là biến ngẫu nhiên chuẩn tắc, có phân phối chuẩn với trung bình μ = 0 và độ lệch chuẩn σ = 1.</p>
+            <p>Bước 2: P(Z < 1.96) là diện tích dưới đường cong chuẩn từ -∞ đến 1.96.</p>
+            <p>Bước 3: Từ bảng phân phối chuẩn, P(Z < 1.96) ≈ 0.975.</p>
+            <p>Bước 4: Điều này có nghĩa là khoảng 97.5% dữ liệu nằm dưới 1.96 độ lệch chuẩn.</p>
+            <p>Kết quả: 0.975</p>
+        </div>
+        <div class="problem">Bài 3 : Áp dụng định lý Bayes: Cho P(A|B) = 0.8, P(B|A) = 0.6, P(A) = 0.4. Tính P(B)</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Định lý Bayes: P(B|A) = [P(A|B) * P(B)] / P(A)</p>
+            <p>Bước 2: Từ đó, P(B) = [P(B|A) * P(A)] / P(A|B)</p>
+            <p>Bước 3: Thay số: P(B) = (0.6 * 0.4) / 0.8 = 0.24 / 0.8 = 0.3</p>
+            <p>Bước 4: Kiểm tra: P(B) = 0.3</p>
+            <p>Kết quả: 0.3</p>
+        </div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Công thức phân phối Poisson: P(X=k) = (e^{-λ} λ^k) / k!</p>
+            <p>Bước 2: λ = 3, k = 2</p>
+            <p>Bước 3: P(X=2) = (e^{-3} * 3^2) / 2! = (e^{-3} * 9) / 2 = (9 e^{-3}) / 2 ≈ (9 * 0.0498) / 2 ≈ 0.4482 / 2 ≈ 0.2241</p>
+            <p>Bước 4: Tính chính xác: e^{-3} ≈ 0.049787, 3^2 = 9, 2! = 2, vậy P ≈ 0.224</p>
+            <p>Kết quả: ≈ 0.224</p>
+        </div>
+         <div class="problem">Bài 4 : Tính P(X=2) với X ~ Poisson(λ=3)</div>
+        <div class="solution">
+            <p>Lời giải chi tiết:</p>
+            <p>Bước 1: Công thức phân phối Poisson: P(X=k) = (e^{-λ} λ^k) / k!</p>
+            <p>Bước 2: λ = 3, k = 2</p>
+            <p>Bước 3: P(X=2) = (e^{-3} * 3^2) / 2! = (e^{-3} * 9) / 2 = (9 e^{-3}) / 2 ≈ (9 * 0.0498) / 2 ≈ 0.4482 / 2 ≈ 0.2241</p>
+            <p>Bước 4: Tính chính xác: e^{-3} ≈ 0.049787, 3^2 = 9, 2! = 2, vậy P ≈ 0.224</p>
+            <p>Kết quả: ≈ 0.224</p>
+        </div>
+    </div>
+</body>
+</html>

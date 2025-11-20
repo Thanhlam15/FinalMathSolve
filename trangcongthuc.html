@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Thức Toán Học Cấp 3</title>
+    <style>
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* font chữ chính toàn trang */
+    margin: 0; /* loại bỏ margin mặc định của trình duyệt */
+    padding: 20px; /* khoảng cách bên trong body */
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* nền gradient nghiêng */
+    color: #333; /* màu chữ mặc định */
+    line-height: 1.6; /* khoảng cách giữa các dòng */
+}
+
+/* Tiêu đề chính */
+h1 {
+    text-align: center; /* căn giữa chữ */
+    color: #2c3e50; /* màu chữ chính */
+    font-size: 2.5em; /* chữ lớn */
+    margin-bottom: 20px; /* khoảng cách dưới h1 */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* bóng chữ nhẹ */
+}
+
+/* Navbar */
+nav {
+    background-color: #FE7743; /* màu nền navbar */
+    padding: 15px; /* khoảng cách bên trong navbar */
+    border-radius: 8px; /* bo tròn các góc */
+    margin-bottom: 30px; /* khoảng cách dưới navbar */
+    display: flex; /* dùng flexbox sắp xếp link */
+    justify-content: center; /* căn giữa các link theo chiều ngang */
+    flex-wrap: wrap; /* tự xuống dòng nếu quá nhiều link */
+}
+nav a {
+    margin: 0 10px; /* khoảng cách giữa các link ngang */
+    text-decoration: none; /* bỏ gạch chân chữ */
+    color: #fff; /* màu chữ trắng */
+    font-weight: bold; /* chữ đậm */
+    padding: 10px 15px; /* padding bên trong link */
+    border-radius: 5px; /* bo tròn link */
+    background-color: #E6A45F; /* màu nền link */
+}
+nav a:hover {
+    background-color: #d35400; /* khi hover đổi màu nền */
+}
+
+/* Paragraph */
+p {
+    text-align: center; /* căn giữa chữ */
+    font-size: 1.1em; /* chữ to hơn bình thường */
+    margin-bottom: 30px; /* khoảng cách dưới paragraph */
+}
+
+/* Section */
+.section {
+    margin-bottom: 40px; /* khoảng cách giữa các section */
+    border: 1px solid #ddd; /* viền xám nhạt */
+    padding: 20px; /* khoảng cách bên trong section */
+    border-radius: 10px; /* bo góc section */
+    background: #fff; /* nền trắng */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1); /* bóng đổ nhẹ */
+    transition: box-shadow 0.3s ease; /* hiệu ứng chuyển bóng mượt khi hover */
+}
+.section:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* bóng đổ lớn hơn khi hover */
+}
+
+/* H2 */
+h2 {
+    color: #333; /* màu chữ */
+    border-bottom: 2px solid #3498db; /* gạch chân xanh dày 2px */
+    padding-bottom: 10px; /* khoảng cách chữ và gạch chân */
+    margin-bottom: 20px; /* khoảng cách dưới h2 */
+}
+
+/* Formula */
+.formula {
+    font-weight: bold; /* chữ đậm */
+    margin-bottom: 15px; /* khoảng cách dưới công thức */
+    color: #e74c3c; /* màu đỏ nổi bật */
+    font-size: 1.1em; /* chữ hơi lớn */
+}
+
+/* Explanation */
+.explanation {
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7); /* nền gradient xám nhạt */
+    padding: 15px; /* khoảng cách bên trong khối giải thích */
+    border-left: 5px solid #27ae60; /* viền trái màu xanh */
+    border-radius: 5px; /* bo góc */
+    margin-top: 10px; /* khoảng cách trên */
+}
+.explanation p {
+    margin: 0; /* loại bỏ margin mặc định */
+    text-align: left; /* chữ căn trái */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* navbar đổi sang cột */
+        align-items: center; /* căn giữa các link dọc */
+    }
+    nav a {
+        margin: 5px 0; /* khoảng cách giữa các link dọc */
+    }
+    h1 {
+        font-size: 2em; /* giảm size h1 cho nhỏ màn hình */
+    }
+}
+    </style>
+</head>
+<body>
+    <h1>Công Thức Toán Học Cấp 3</h1>
+    <nav>
+        <a href="#lop10"> Lớp 10</a>
+        <a href="#lop11"> Lớp 11</a>
+        <a href="#lop12">Lớp 12</a>
+    </nav>
+
+    <div class="section" id="lop10">
+        <h2>Công Thức Lớp 10</h2>
+        <div class="formula">1. Phương trình bậc hai: ax² + bx + c = 0</div>
+        <div class="explanation">
+            <p>Nghiệm: x = [-b ± √(b² - 4ac)] / (2a)</p>
+            <p>Điều kiện: a ≠ 0, Δ = b² - 4ac ≥ 0</p>
+        </div>
+        <div class="formula">2. Hệ phương trình tuyến tính 2 ẩn: a1x + b1y = c1, a2x + b2y = c2</div>
+        <div class="explanation">
+            <p>Giải bằng phương pháp thế hoặc cộng đại số.</p>
+            <p>Nghiệm: x = (c1b2 - c2b1)/(a1b2 - a2b1), y = (a1c2 - a2c1)/(a1b2 - a2b1)</p>
+        </div>
+        <div class="formula">3. Công thức lượng giác cơ bản</div>
+        <div class="explanation">
+            <p>sin²α + cos²α = 1</p>
+            <p>tanα = sinα / cosα</p>
+            <p>cotα = cosα / sinα</p>
+        </div>
+        <div class="formula">4. Diện tích tam giác: S = (1/2)ab sinC</div>
+        <div class="explanation">
+            <p>Trong đó a, b là hai cạnh, C là góc giữa chúng.</p>
+        </div>
+        <div class="formula">5. Tập xác định hàm số: f(x) = √(x - a)</div>
+        <div class="explanation">
+            <p>Tập xác định: x ≥ a</p>
+        </div>
+        <div class="formula">6. Bất đẳng thức Cauchy: (a + b)² ≥ 4ab</div>
+        <div class="explanation">
+            <p>Dấu bằng khi a = b.</p>
+        </div>
+        <div class="formula">7. Công thức Heron: S = √[p(p-a)(p-b)(p-c)]</div>
+        <div class="explanation">
+            <p>Diện tích tam giác với ba cạnh a, b, c; p = (a+b+c)/2</p>
+        </div>
+        <div class="formula">8. Phương trình đường thẳng: y = ax + b</div>
+        <div class="explanation">
+            <p>a là hệ số góc, b là tung độ gốc.</p>
+        </div>
+    </div>
+
+    <div class="section" id="lop11">
+        <h2>Công Thức Lớp 11</h2>
+        <div class="formula">1. Phương trình lượng giác: sinx = a</div>
+        <div class="explanation">
+            <p>Nghiệm: x = arcsin a + kπ, x = π - arcsin a + kπ</p>
+            <p>Với |a| ≤ 1</p>
+        </div>
+        <div class="formula">2. Logarit: log_a b = c ⇔ a^c = b</div>
+        <div class="explanation">
+            <p>Điều kiện: a > 0, a ≠ 1, b > 0</p>
+        </div>
+        <div class="formula">3. Giới hạn cơ bản: lim (x→0) (sinx / x) = 1</div>
+        <div class="explanation">
+            <p>Lim (x→0) (1 - cosx)/x = 0</p>
+        </div>
+        <div class="formula">4. Đạo hàm: d/dx (x^n) = n x^{n-1}</div>
+        <div class="explanation">
+            <p>d/dx (sinx) = cosx</p>
+            <p>d/dx (cosx) = -sinx</p>
+        </div>
+        <div class="formula">5. Phương trình đường thẳng trong không gian</div>
+        <div class="explanation">
+            <p>Vector chỉ phương: u = (a, b, c)</p>
+            <p>Điểm M0(x0,y0,z0), phương trình: (x-x0)/a = (y-y0)/b = (z-z0)/c</p>
+        </div>
+        <div class="formula">6. Diện tích hình chiếu</div>
+        <div class="explanation">
+            <p>S = S' cosα, với α là góc giữa mặt phẳng và đường thẳng vuông góc.</p>
+        </div>
+        <div class="formula">7. Công thức tích phân: ∫ x^n dx = x^{n+1}/(n+1) + C</div>
+        <div class="explanation">
+            <p>∫ sinx dx = -cosx + C</p>
+            <p>∫ cosx dx = sinx + C</p>
+        </div>
+        <div class="formula">8. Bất đẳng thức lượng giác: sinx ≤ x (rad)</div>
+        <div class="explanation">
+            <p>Cho x ∈ [0, π/2]</p>
+        </div>
+    </div>
+
+    <div class="section" id="lop12">
+        <h2>Công Thức Lớp 12</h2>
+        <div class="formula">1. Ma trận nghịch đảo: A^{-1} = (1/det A) adj A</div>
+        <div class="explanation">
+            <p>Điều kiện: det A ≠ 0</p>
+        </div>
+        <div class="formula">2. Tích phân xác định: ∫_a^b f(x) dx = F(b) - F(a)</div>
+        <div class="explanation">
+            <p>F là nguyên hàm của f</p>
+        </div>
+        <div class="formula">3. Phương trình vi phân: dy/dx = f(x)</div>
+        <div class="explanation">
+            <p>Nghiệm: y = ∫ f(x) dx + C</p>
+        </div>
+        <div class="formula">4. Xác suất: P(A) = số kết quả thuận lợi / tổng số kết quả</div>
+        <div class="explanation">
+            <p>Định lý Bayes: P(A|B) = P(B|A) P(A) / P(B)</p>
+        </div>
+        <div class="formula">5. Phân phối chuẩn: Z = (X - μ)/σ ~ N(0,1)</div>
+        <div class="explanation">
+            <p>P(Z < z) từ bảng chuẩn.</p>
+        </div>
+        <div class="formula">6. Công thức tích phân từng phần: ∫ u dv = u v - ∫ v du</div>
+        <div class="explanation">
+            <p>Áp dụng cho tích phân phức tạp.</p>
+        </div>
+        <div class="formula">7. Giá trị cực đại/tiểu: f'(x) = 0, f''(x) > 0 (cực tiểu)</div>
+        <div class="explanation">
+            <p>Kiểm tra đạo hàm bậc hai.</p>
+        </div>
+        <div class="formula">8. Thể tích khối tròn xoay: V = π ∫_a^b [f(x)]^2 dx</div>
+        <div class="explanation">
+            <p>Quanh trục Ox.</p>
+        </div>
+    </div>
+
+</body>
+</html>

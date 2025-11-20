@@ -1,0 +1,153 @@
+/* Đặt cấu trúc tổng thể */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Căn bố cục chính */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 100px;
+}
+
+/* Phần bên trái */
+.left {
+  max-width: 400px;
+}
+
+.logo {
+  color: #1877f2;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 24px;
+  color: #1c1e21;
+  line-height: 1.4;
+}
+
+/* Phần bên phải */
+.right .login-box {
+  background: #fff;
+  padding: 16px 14px;
+  border-radius: 1px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  width: 390px;
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  outline: none;
+  display: block;
+   box-sizing: border-box;
+}
+.login-box input:focus {
+  border: 1px solid #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.15);
+}
+.login-btn {
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #166fe5;
+}
+
+.forgot {
+  display: block;
+  color: #1877f2;
+  font-size: 14px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #dddfe2;
+  margin: 20px 0;
+}
+
+.new-account-btn {
+  background-color: #42b72a;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.new-account-btn:hover {
+  background-color: #36a420;
+}
+
+.note {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #606770;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px 0;
+  color: #737373;
+  font-size: 13px;
+}
+
+footer .footer-links {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+footer hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .left {
+    max-width: 90%;
+  }
+
+  .right .login-box {
+    width: 90%;
+  }
+}
