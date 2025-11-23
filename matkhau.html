@@ -109,7 +109,11 @@
             .map(b => b.toString(16).padStart(2, "0"))
             .join("");
     }
-    const HASH_free = "3838970411b1880ed63d26e88fc84848c48493a453c9bfdcfd650214681ed9b4";
+    const FREE_KEYS = ["3838970411b1880ed63d26e88fc84848c48493a453c9bfdcfd650214681ed9b4",
+// key free 1
+        // muốn thêm key → thêm dòng mới:
+        "7d7451523a83b8d592bdd269cd5640943f7c0473c059880ef65537e592a3c0f1",
+    ];
     const HASH_premium= "";
 
     async function checkPass() {
@@ -120,11 +124,13 @@
         // Tính HASH
         let inputHash = await hashPassword(inputPass);
 
-        if (inputHash === HASH_free) {
+        if (FREE_KEYS.includes(inputHash)) {
             window.location.href = "darkmathfree.html";
+            return;
         }
-        else if (inputHash === HASH_premium) {
+        else  if (PREMIUM_KEYS.includes(inputHash)) {
             window.location.href = "darkmathpremium.html";
+            return;
         }
         else {
             errorText.style.display = "block"; 

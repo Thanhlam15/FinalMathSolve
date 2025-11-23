@@ -120,7 +120,9 @@ body {
 
 .movie-card img {
   width: 100%;
-  display: block;
+  height: 250px;   /* chỉnh tùy ý: 200px, 220px, 300px… */
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .movie-card h3 {
