@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DarkMath - Xem Phim</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    /* Header */
+    .header {
+      padding: 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Video player chính */
+    .main-video {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .main-video video {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(255, 0, 100, 0.7);
+    }
+
+    /* Danh sách phim */
+    .video-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video-item {
+      width: 180px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 0, 100, 0.7);
+    }
+
+    .video-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .video-item .title {
+      text-align: center;
+      margin-top: 5px;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .header {
+        font-size: 1.5rem;
+      }
+      .video-item {
+        width: 45%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">DarkMath - Xem Phim</div>
+
+  <!-- Video chính -->
+  <div class="main-video">
+    <video id="player" controls>
+      <source src="https://www.dropbox.com/scl/fi/xevfd32emj3g9m5sqtd2m/449029763384999035.MP4?rlkey=gt4agm5hd58obs1t73bhsm3zu&st=gy6kbmdi&raw=1" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+  </div>
+ <script>
+    function changeVideo(src) {
+      const player = document.getElementById('player');
+      player.src = src;
+      player.play();
+    }
+  </script>
+
+</body>
+</html>
