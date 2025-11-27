@@ -14,7 +14,7 @@
 
     /* Header */
     .header {
-      padding: 20px;
+      padding: 30px;
       text-align: center;
       background: linear-gradient(to right, #ff4b2b, #ff416c);
       font-size: 2rem;
@@ -66,7 +66,44 @@
       font-size: 1rem;
       color: #fff;
     }
+/* Nút Trang Chủ Neon + Icon */
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  box-shadow: 0 0 15px rgba(255, 50, 120, 0.9),
+              0 0 30px rgba(255, 0, 140, 0.4);
+
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+/* Icon home */
+.home-btn i {
+  font-size: 1.3rem;
+}
+
+/* Hiệu ứng hover */
+.home-btn:hover {
+  transform: scale(1.09);
+  box-shadow: 0 0 20px rgba(255, 50, 120, 1),
+              0 0 35px rgba(255, 0, 140, 0.6),
+              0 0 50px rgba(255, 0, 140, 0.4);
+}
     /* Responsive */
     @media (max-width: 600px) {
       .header {
@@ -81,6 +118,9 @@
 <body>
 
   <div class="header">DarkMath - Xem Phim</div>
+  <button class="home-btn" onclick="window.location.href='../darkmathfree.html'">
+  <i>🏠</i> Trang Chủ
+</button>
 
   <!-- Video chính -->
   <div class="main-video">
